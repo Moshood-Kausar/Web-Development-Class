@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM DISPLAY</title>
+</head>
+<body>
+	
+		<p id="displayText"></p>
+		<form>
+		
+			<input type="text" name="" id="userInput" onkeyup="displayInput(this.userInput);">
+
+		</form>
+			
+			<script type="text/javascript">
+
+	function displayInput(userInput){
+		var result=document.getElementById('userInput').value
+		document.getElementById('displayText').innerHTML = result; 
+
+	 	
+    }
+</script>
+</body>
+</html>

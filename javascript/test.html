@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Test</title>
+</head>
+<body><p id="outpuT"></p>
+
+	<form>
+		<input type="text" name="name" id="name" onkeyup="showtext(this.name);" placeholder="Test">
+	</form>
+
+
+
+
+<script type="text/javascript">
+	function showtext(name) {
+		document.getElementById('outpuT').innerHTML = document.getElementById('name').value;
+	}
+</script>
+</body>
+</html>

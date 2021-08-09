@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+		
+</head>
+<body>
+	<h2 id="showinfo"> </h2>
+	<button type="button" id="clickme"> Subscribe</button>
+	<button type="button" id="hideme" onclick="subuser()"> Subscribe2</button>
+	<button type="button" id="closeme" style="display: none;" onclick="closeBtn()"> Close</button>
+<script type="text/javascript">
+	/*alert('REGISTRATION SUCCESSFUL');*/
+	//confirm('Do you want to submit')
+	//prompt('Enter a prediction');
+	//console.log('today is good');
+	//document.write('Welcome to JS Class');
+	document.getElementById('clickme').addEventListener('mouseover', function(){
+		document.getElementById('showinfo').innerHTML='Thank you for subscribing';
+
+	});
+	function subuser(){
+		document.getElementById('showinfo').innerHTML='Thank you for subscribing2';
+		document.getElementById('showinfo').style.color='red';
+		document.getElementById('hideme').style.display="none";
+		document.getElementById('closeme').style.display="inline";
+
+	}
+	function closeBtn(){
+		document.getElementById('showinfo').innerHTML='';
+		document.getElementById('closeme').style.display="none";
+		document.getElementById('hideme').style.display="inline";
+
+
+} 
+
+	var useremail="jide@obounce.net";
+	var age=78;
+	var marital="single";
+	var password="1234567!";
+	var loginPhone="09068812098"
+
+
+	var LoginEmail="jide@obounce.net";
+	var age=60;
+	var loginPass="1234567!";
+	var Phone="09068812098"
+	if (useremail==LoginEmail && password==loginPass){
+		document.write('Account logged in')
+	}else if(loginPhone==Phone && password==loginPass){
+		document.write("You're logged in")
+	}else{
+		document.write('Invalid Login details');
+	}
+	//var hour=today.getHours();
+	//var year=today.getFullYear();
+	//var seconds=today.getSeconds();
+//	var today=new Date();
+//	var hour=today.getHours();
+//	if ( hour >0 && hour<12){
+//		document.write('Good Morning');
+//	}
+//	else if(hour>=12 && hour <17){
+//		document.write('Good Afternoon');
+//	}else if(hour>=17 && hour <22){
+//		document.write('Good Evening');
+//	}else if(hour>=22 ){
+//		document.write('Good night');
+//	}else {
+//		document.write('Error occured');
+//	}
+
+//	console.log(hour);
+
+
+//var uni = ['UI', 'OAU', 'AAUA', 'FUNNAB', 'RUN', 'OSU'];
+//document.write(uni.sort());
+
+//var x = 2;
+//while(x<10){
+	//console.log(x)
+	//x++
+//}
+
+/*var var1 = 2;
+var var2 = 10;
+while(var2 >= var1){
+	document.write('i love you'+var2+'<br>')
+	var2--;
+}*/
+	
+/*	var x = 2;
+	var y = 10;
+do{
+	document.write('i love you all');
+	x++;
+}while(x < y);*/
+
+var names = ['JOHN', 'KAUSAR', 'DAMILOLA', 'PELUMI', 'VICTOR'];
+
+for(x = 0; x < names.length; x++){
+	document.write('message sent to '+ names[x]+ '<br>');
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+

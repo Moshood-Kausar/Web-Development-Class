@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form</title>
+</head>
+<body>
+	<h2 id="showinfo"> </h2>
+<form>
+	<input id="email" type="text" placeholder="Email or Phonenumber"><br>
+	<input id="password" type="password" placeholder="password"><br>
+	<button id="Login" type="button" onclick="login();"> Log in</button>
+
+</form>
+
+<script type="text/javascript">
+	function login(){
+		var useremail="jide@obounce.net";
+		var userphone="09068812098"
+		var password="1234567!";
+
+		var LoginEmail=document.getElementById('email').value
+		var loginpass=document.getElementById('password').value
+
+if (useremail==LoginEmail && password==loginpass){
+		document.getElementById('showinfo').innerHTML='Account logged in';
+}else if (userphone==LoginEmail && password==loginpass){
+		document.getElementById('showinfo').innerHTML='Account logged in';
+}else{
+		document.getElementById('showinfo').innerHTML='Invalid login details';
+	}
+}
+</script>
+</body>
+</html>

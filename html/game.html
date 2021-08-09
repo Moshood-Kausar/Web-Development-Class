@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+</head>
+<body>
+		<div>
+			<input type="number" value="" id="mynumber" placeholder="Enter a number">
+		</div>
+		<script type="text/javascript">
+			
+			 function myshuffle(array) {
+			 	array.sort(()=>Math.random() -0.5);
+			 	var num=[0, 1,2,3,4,5,6,7,8,9];   //Create an array of numbers 0-9
+			    var shuf=myshuffle(num);
+			 	var newitem=shuf.pop();        //console.log(num.pop());  //to show the last item in an array
+			 	var guess=document.getElementBy('mynumber').value
+			 	cosole.log(guess);
+			 }
+		</script>
+</body>
+</html>

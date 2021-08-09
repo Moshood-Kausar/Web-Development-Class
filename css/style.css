@@ -1,0 +1,33 @@
+body{
+	background:#eee 
+}
+
+
+.form-section .header{
+	text-align: center;
+
+}
+.form-card{
+	background: white;
+	margin: auto;
+	text-align: center;
+	width: 450px;
+	padding: 15px;
+	grid-gap: 20px;
+}
+.input-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+input{
+	width: 95%;
+	padding: 10px 5px;
+	margin: 5px;
+}
+
+select{
+	padding: 10px 5px;
+	margin: 5px;
+	width: 100%;
+}
